@@ -1,4 +1,0 @@
-- hosts: ethereum
-  become: yes
-  roles:
-    - geth
