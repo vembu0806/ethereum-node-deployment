@@ -1,0 +1,12 @@
+[Unit]
+Description=Ethereum Node
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/geth --syncmode fast --http --http.api eth,net,web3 --http.addr 0.0.0.0
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

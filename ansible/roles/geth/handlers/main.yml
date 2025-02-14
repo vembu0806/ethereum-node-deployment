@@ -1,0 +1,5 @@
+- name: Restart Geth
+  systemd:
+    name: geth
+    state: restarted
+    enabled: yes

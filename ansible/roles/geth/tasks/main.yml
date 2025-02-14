@@ -1,0 +1,28 @@
+- name: Install dependencies
+  apt:
+    name:
+      - software-properties-common
+      - python3-pip
+      - unzip
+    state: present
+
+- name: Add Ethereum PPA repository
+  apt_repository:
+    repo: "ppa:ethereum/ethereum"
+    state: present
+
+- name: Install Geth (Ethereum Node)
+  apt:
+    name: geth
+    state: present
+
+- name: Configure Geth systemd service
+  template:
+    src: geth.service.j2
+    dest: /etc/systemd/system/geth.service
+
+- name: Start and Enable Geth service
+  systemd:
+    name: geth
+    enabled: yes
+    state: started
