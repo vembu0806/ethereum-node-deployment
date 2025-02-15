@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "ethereum_node" {
   ami           = "ami-0c55b159cbfafe1f0" # Ubuntu 22.04
   instance_type = "t2.micro"
-  key_name      = var.key_name
+  key_name      = var.xxxx #removed key
   security_groups = ["ethereum-sg"]
 
   tags = {
