@@ -1,1 +1,2 @@
-key_name = "my-aws-key"
+key_name = "enter-aws-key"
+#removed the key
