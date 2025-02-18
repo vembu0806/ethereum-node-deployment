@@ -1,3 +1,5 @@
+
+#Removed sensitive info
 #!/bin/bash
 
 echo "Starting Ethereum Node Deployment..."
