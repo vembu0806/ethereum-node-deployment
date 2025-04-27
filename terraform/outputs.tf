@@ -12,4 +12,4 @@ output "ssh_command" {
   description = "SSH command to connect to the Ethereum node"
   value       = "ssh -i ~/.ssh/my-aws-key.pem ubuntu@${aws_instance.ethereum.public_ip}"
 }
-# remove sensitive info is done
+# remove sensitive info is done.
