@@ -9,7 +9,7 @@ resource "aws_instance" "ethereum_node" {
   security_groups = ["ethereum-sg"]
 
   tags = {
-    Name = "EthereumNode"
+    Name = "Ethereum-Node"
   }
 }
 
